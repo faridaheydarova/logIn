@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./helper.js"></script>
+</head>
+
+<body class="min-h-screen bg-[border-cyan-400] flex items-center justify-center">
+
+ 
+
+  <div class="bg-gray w-[480px]  shadow-2xl px-8 py-10">
+    
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+      Log in
+    </h2>
+ 
+
+    <form id="loginForm" class="space-y-5">
+
+      <input 
+      id="email"
+        type="email"
+        placeholder="john.doe@example.com"
+        class="w-full px-4 py-3 border  text-sm 
+               focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400"
+        required
+      />
+
+      <input
+      id="password"
+        type="password"
+        placeholder="********"
+        class="w-full px-4 py-3 border rounded-md text-sm
+               focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400"
+        required
+      />
+
+     <button
+  id="loginBtn"
+  type="submit"
+  class="w-full bg-cyan-500 text-white py-3 rounded-md"
+>
+  Log in
+</button>
+
+
+     
+
+    </form>
+
+    <p class="text-center text-sm text-gray-500 mt-6">
+      or, <a href="#" class="text-cyan-500 font-semibold hover:underline">sign up</a>
+    </p>
+
+  </div>
+ <script src="app.js"></script>
+</body>
+</html>
